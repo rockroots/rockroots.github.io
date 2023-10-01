@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        nav.navbar {
+            padding-left: 7.5px;
+        }
+        #header {
+            position: relative;
+            padding-left: 25px;
+            background-color: #ffb2b2;
+            background-size: contain;
+            box-sizing: border-box;
+            aspect-ratio: 2/1;
+        }
+        #header-content {
+            /* POSITION */
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            /* PADDING */
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            /* GLASS MORPHISM STUFF */
+            text-align: center;
+        }
+
+        .mission-statement {
+            background-color: rgb(227, 188, 244);
+        }
+        .who-we-are {
+            padding-top: 10px;
+            background-color: rgb(207, 170, 221);
+        }
+
+        .color-box {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 50%;
+            height: 400px;
+            flex: 1;
+            margin: auto;
+
+        }
+
+        .info-box {
+            margin: auto;
+            display: flex;
+            width: 80%;
+        }
+
+        .shadow-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;          
+            flex: 1;
+            border-radius: 20%;
+            box-shadow: 0 8px 32px 0 rgba(38, 38, 38, 0.37);
+        }
+        p {
+            font-size: 22px;
+        }
+        .bolded {
+            font-weight: bolder;
+        }
+        .logo {
+            padding-top: -10px;
+            padding: -5px;
+        }
+        .navbar {
+            box-shadow: 0 8px 32px 0 rgba(38, 38, 38, 0.37);
+        }
+
+    </style>        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RockRoots - Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../assets/images/rockrootslogo.svg" width="30" height="30" class="d-inline-block align-top logo" alt="">
+            RockRoots
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.gofundme.com/f/get-black-and-hispanic-youth-into-climbing">Donate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" style="padding-top: 20px;"><button type="button" class="btn btn-warning">Contact</button></a>
+                    
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <div id="header">
+        <div id="header-content">
+            <h1>Events</h1>
+        </div>
+    </div>
+    
+    <div class="color-box mission-statement">
+        <br>
+        <h2>2023-2024 Programming</h2>
+        <p>We have partnered with Police Athletic Leage, and the Cliffs at Harlem to provide free climbing classes for youth in the surrounding community.</p>
+        <p>Unfortunately, as of right now, registration is full. Please <a href="contact.html">contact us</a> with any questions you have!</p>
+        
+
+    </div>
+
+    <div class="color-box footer">
+        <br>
+        <div>
+            <a style="display: inline-block;" href="https://www.harlem.thecliffsclimbing.com/"><img class="shadow-image alt" href="https://www.harlem.thecliffsclimbing.com/" width="100px" height="100px" src="../assets/images/cliffs_logo.png" alt="cliffs harlem logo"></a>
+            <a style="display: inline-block;" href="https://www.palnyc.org/"><img class="shadow-image alt" width="100px" height="100px" src="../assets/images/pal_logo.png" alt="police athletic league logo"></a>
+            
+        </div>
+        <br>
+        <div>
+            © 2022-23 RockRoots, website created by
+            <a href="https://conradbooker.github.io">conrad booker</a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  </body>
+</html>

@@ -1,11 +1,240 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+        nav.navbar {
+            padding-left: 7.5px;
+        }
+        #header {
+            position: relative;
+            padding-left: 25px;
+            background-image: url('assets/images/group.png');
+            background-size: contain;
+            box-sizing: border-box;
+            aspect-ratio: 2/1;
+        }
+        #header-content {
+            /* POSITION */
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            /* PADDING */
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            /* GLASS MORPHISM STUFF */
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba(38, 38, 38, 0.37);
+            backdrop-filter: blur( 10px );
+            -webkit-backdrop-filter: blur( 10px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+            /* TEXT */
+            text-align: center;
+        }
+
+        .mission-statement {
+            box-shadow: 0 8px 32px 0 rgba(38, 38, 38, 0.37);
+            background-color:rgb(255, 255, 255);
+        }
+        .who-we-are {
+            padding-top: 10px;
+            background-color: #adc;
+        }
+        .what-we-have-done {
+            padding-top: 10px;
+            background-color: #fae5af;
+        }
+
+        .color-box {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 50%;
+            height: 400px;
+            flex: 1;
+            margin: auto;
+
+        }
+
+        .info-box {
+            margin: auto;
+            display: flex;
+            width: 80%;
+        }
+
+        .shadow-image {
+            display: block;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;          
+            flex: 1;
+            border-radius: 5%;
+            box-shadow: 0 8px 32px 0 rgba(38, 38, 38, 0.37);
+        }
+        p {
+            font-size: 22px;
+        }
+        .bolded {
+            font-weight: bolder;
+        }
+        .logo {
+            padding-top: -10px;
+            padding: -5px;
+        }
+        .navbar {
+            box-shadow: 0 8px 32px 0 rgba(38, 38, 38, 0.37);
+        }
+        .alt {
+            border-radius: 20%;
+        }
+
+
+
+    </style>        
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RockRoots - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hi</h1>
-  </body>
+    <!-- NAV BAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/rockrootslogo.svg" width="30" height="30" class="d-inline-block align-top logo" alt="">
+            RockRoots
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="subpages/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="subpages/events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.gofundme.com/f/get-black-and-hispanic-youth-into-climbing">Donate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="subpages/contact.html" style="padding-top: 20px;"><button type="button" class="btn btn-warning">Contact</button></a>
+                    
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <div id="header">
+        <div id="header-content">
+            <h2>We get Black and Latino children into rock climbing.</h2>
+        </div>
+    </div>
+    
+    <div class="color-box mission-statement">
+        <br>
+        <h2>Black and Latino children have historically been left out of climbing.</h2>
+        <p>
+            Rock climbing has become an increasingly popular sport. Despite this increase in popularity, rock climbing has failed to become more diverse.
+            In both of our climbing regions, we are <span class="bolded">one of the few</span> Black / Latino climbers, despite there being <span class="bolded">400+ competitors</span> in each of our regions.
+        </p>
+        <!-- <br> -->
+        <p>
+            While we hope to cultivate a more <span class="bolded">welcoming environment</span> in the climbing scene, we hope to <span class="bolded">inspire confidence</span> in the next generation of athletes.
+        </p>
+    </div>
+
+    <div class="color-box who-we-are">
+        <br>
+        <h2>Who we are</h2>
+        <h4>We are Conrad Booker and Nyasha Knigge, two Black youth competitive climbers in high school at the Trinity School NYC.</h4>
+        <br>
+        <br>
+        
+        <!-- Nyasha Content -->
+        <div class="info-box">
+            <div class="box">
+                <img class="shadow-image" src="assets/images/nyasha.jpg" alt="Nyasha Climbing">
+            </div>
+            <div class="box">
+                <h3>Nyasha Knigge</h3>
+                <p>
+                    Nyasha Knigge is a 17 year old competitive climber from Jersey City. She has been competing for 5 years in USAC Region 82.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Conrad Content -->
+        <div class="info-box">
+            <div class="box">
+                <h3>Conrad Booker</h3>
+                <p>
+                    Conrad Booker is a 17 year old competitive climber from NYC. He has been competing for 4 years in USAC Region 91.
+                </p>
+        
+            </div>
+            <div class="box">
+                <img class="shadow-image" src="assets/images/conrad.jpg" alt="Conrad Climbing">
+            </div>
+        </div>
+    </div>
+
+    <div class="color-box what-we-have-done">
+        <br>
+        <h2>What we have done so far!</h2>
+        <p>Youth currently enrolled in RockRoots programming climb at the Cliffs at Harlem once a week, within the Cliffs' Saturday rec program. Along with the other coaches, Nyasha and Conrad work on foundational skills, such as team work and problem solving with the kids hands on.</p>
+        <div class="info-box">
+            <div class="box">
+                <img class="shadow-image" src="assets/images/rand_1.png" alt="Conrad Climbing">
+            </div>
+            <div class="box">
+                <img class="shadow-image" src="assets/images/rand_2.png" alt="Conrad Climbing">
+            </div>
+        </div>
+        <div class="info-box">
+            <div class="box">
+                <img class="shadow-image" src="assets/images/rand_3.png" alt="Conrad Climbing">
+            </div>
+            <div class="box">
+                <img class="shadow-image" src="assets/images/rand_4.png" alt="Conrad Climbing">
+            </div>
+        </div>
+    </div>
+
+    <div class="color-box footer">
+        <br>
+        <div>
+            <a style="display: inline-block;" href="https://www.harlem.thecliffsclimbing.com/"><img class="shadow-image alt" href="https://www.harlem.thecliffsclimbing.com/" width="100px" height="100px" src="assets/images/cliffs_logo.png" alt="cliffs harlem logo"></a>
+            <a style="display: inline-block;" href="https://www.palnyc.org/"><img class="shadow-image alt" width="100px" height="100px" src="assets/images/pal_logo.png" alt="police athletic league logo"></a>
+            
+        </div>
+        <br>
+        <div>
+            © 2022-23 RockRoots, website created by
+            <a href="https://conradbooker.github.io">conrad booker</a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  </body>
 </html>
