@@ -5,14 +5,6 @@
         nav.navbar {
             padding-left: 7.5px;
         }
-        #header {
-            position: relative;
-            padding-left: 25px;
-            background-image: url('assets/images/group.png');
-            background-size: contain;
-            box-sizing: border-box;
-            aspect-ratio: 2/1;
-        }
         #header-content {
             /* POSITION */
             position: absolute;
@@ -97,7 +89,56 @@
             border-radius: 20%;
         }
 
+        /* MOBILE FORMATTING */
+        @media (max-width: 400px) {
+            .box {
+                width: 50%;
+                flex: 1;
+                margin: auto;
+    
+            }
+    
+            .info-box {
+                margin: auto;
+                width: 80%;
+            }
+    
+            #header {
+                position: relative;
+                padding-left: 25px;
+                background-image: url('assets/images/group.png');
+                background-size: cover;
+                background-position: center;
+                box-sizing: border-box;
+                aspect-ratio: 1;
+            }
+        }
 
+        /* REGULAR FORMATTING */
+        @media (min-width: 400px) {
+            .box {
+                width: 50%;
+                flex: 1;
+                margin: auto;
+    
+            }
+    
+            .info-box {
+                margin: auto;
+                display: flex;
+                width: 80%;
+            }
+    
+            #header {
+                position: relative;
+                padding-left: 25px;
+                background-image: url('assets/images/group.png');
+                background-size: contain;
+                box-sizing: border-box;
+                aspect-ratio: 2/1;
+            }
+        }
+        
 
     </style>        
     <meta charset="utf-8">
@@ -157,11 +198,12 @@
     </div>
 
     <div class="color-box who-we-are">
-        <br>
         <h2>Who we are</h2>
         <h4>We are Conrad Booker and Nyasha Knigge, two Black youth competitive climbers in high school at the Trinity School NYC.</h4>
         <br>
         <br>
+        <!-- <br>
+        <br> -->
         
         <!-- Nyasha Content -->
         <div class="info-box">
@@ -175,11 +217,7 @@
                 </p>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <br>        
 
         <!-- Conrad Content -->
         <div class="info-box">
@@ -210,6 +248,7 @@
                 <img class="shadow-image" src="assets/images/rand_2.png" alt="Conrad Climbing">
             </div>
         </div>
+        <br>
         <div class="info-box">
             <div class="box">
                 <img class="shadow-image" src="assets/images/rand_3.png" alt="Conrad Climbing">
